@@ -3,6 +3,39 @@
     <title>
         Boy Scout Coffee
     </title>
+<head> 
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+            "header header"
+            "menu content"
+            "footer footer";
+            grid-template-columns: 1fr 3fr;
+            gap: 3px;
+            background-color: dodgerblue;
+            padding: 5px;
+        }
+        .container div {
+            background-color: white;
+        padding: 10px;
+        }
+        .container div.header {
+            grid-area: header;
+            text-align: center;
+        }
+        .container div.menu {
+          grid-area: menu;
+        }
+        .container div.content {
+            grid-area: content;
+        }
+        .container div.footer {
+            grid-area: footer;
+            text-align: center;  
+        }
+    </style>
+</head>
     <body>
         <h1 title="Best Coffee Ever">
             Boy Scout Coffee Sale
@@ -10,5 +43,30 @@
         <p>
             Troop 1100 is having a Fun Raiser Coffee Sale.<br>We have 8 difrent types.<br>Mostly Cafinated.
         </p>
+        <div class="container">
+  <div class="header">
+    <h2>
+        Coffee Types
+    </h2>
+</div>
+  <div class="menu">
+    <a>
+        COLOMBIAN
+    </a>
+</div>
+  <div class="content">
+    <h3>
+        $16
+    </h3>
+    <p>
+        Our Colombian Valle dwl Cauca is a true staple and has a silky, medium body with a very savory character. Look for notes of cocoa, caramel, black cherry, and peach.
+    </p>
+</div>
+  <div class="footer">
+    <h4>
+        Footer
+    </h4>
+</div>
+</div>
     </body>
 </html>
